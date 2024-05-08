@@ -17,6 +17,9 @@
 :root {
   --main-font: 'Inter-Variable', sans-serif;
   --main-font-size: 18px;
+  --accent-font-size: 14px;
+  --main-txt-wdth: 400;
+  --accent-txt-wdth: 700;
   --accent-font: 'PressStart2P-Regular', sans-serif;
   --main-card-font-weight: 400;
   --background-color: #fff;
@@ -54,8 +57,9 @@ body {
   flex-direction: column;
   /* max-inline-size: 696px; */
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  padding-bottom: 25px;
   /* max-block-size: 364px; */
-  block-size: 368px;
+  /* block-size: 368px; */
   margin: 100px auto 100px;
   font-family: var(--accent-font);
   background-color: var(--background-color);
@@ -106,4 +110,84 @@ body {
   position: absolute;
   left: -13px;
   animation: pulse 1s infinite ease-in-out;
+}
+
+/* Основной контент */
+
+/* Общие стили карточек */
+
+.article__card-content {
+  display: flex;
+  flex-direction: column;
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  /* border: 2px solid rgb(0, 0, 0); */
+  margin: 0 auto 50px;
+}
+
+.article__title {
+  font-weight: var(--accent-txt-wdth);
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  padding: 5px 10px;
+  letter-spacing: 0.1px;
+  line-height: 23px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: var(--background-color);
+}
+
+.card__image {
+  width: 100%;
+  max-height: 696px;
+  display: inline-block;
+}
+
+.bus__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Текстовый контент для картиочек */
+
+.article__card-text {
+  background-color: var(--background-color);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.article__card-text-area {
+  margin: 25px;
+}
+
+.article__card-text-block {
+  font-family: var(--main-font);
+  font-weight: var(--main-txt-wdth);
+  letter-spacing: 0.61px;
+  line-height: 21.8px;
+  margin-block-end: 25px;
+}
+
+.article__card-text-block:last-of-type {
+  margin-block-end: 22px;
+}
+
+/* Кнопка lIke */
+
+.card__like-button-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-end: 25px;
+}
+
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+  font-family: var(--accent-font);
+  font-size: var(--accent-font-size);
+  font-weight: var(--main-card-font-weight);
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  padding: 9px 17px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
 }
