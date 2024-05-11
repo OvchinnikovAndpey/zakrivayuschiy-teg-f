@@ -11,6 +11,7 @@
   --main-card-font-weight: 400;
   --background-color: #fff;
   --accent-color: #000;
+  --color-txt-btn: #fff;
   --background-image: repeating-linear-gradient(
       90deg,
       #d3d3d3 0 2px,
@@ -26,6 +27,7 @@
   --main-card-font-weight: 400;
   --background-color: #000;
   --accent-color: #00cc14;
+  --color-txt-btn: #00cc14;
   --background-image: repeating-linear-gradient(
       90deg,
       #000 0 2px,
@@ -42,6 +44,7 @@
     --main-card-font-weight: 400;
     --background-color: #000;
     --accent-color: #00cc14;
+    --color-txt-btn: #00cc14;
     --background-image: repeating-linear-gradient(
         90deg,
         #000 0 2px,
