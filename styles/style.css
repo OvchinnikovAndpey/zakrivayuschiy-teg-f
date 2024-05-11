@@ -24,7 +24,7 @@
   --main-card-font-weight: 400;
   --background-color: #fff;
   --accent-color: #000;
-  --color-txt-btn: #fff;
+  --color-txt-btn: #f5f5f5;
   --background-image: repeating-linear-gradient(
       90deg,
       #d3d3d3 0 2px,
@@ -90,12 +90,12 @@ body {
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 15px;
 }
 
 .theme-menu__item {
   font-size: 14px;
-  padding-inline-start: 4px;
+  padding-inline-start: 10px;
 }
 
 /* Кнопки переключения тем */
@@ -163,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid var(--accent-color);
   margin: 0 auto 50px;
 }
 
@@ -173,9 +173,9 @@ body {
   font-size: var(--main-font-size);
   padding: 5px 10px;
   letter-spacing: 0.1px;
-  line-height: 23px;
-  /* border: 2px solid rgb(0, 0, 0); */
+  /* line-height: 23px; */
   background-color: var(--background-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card__image {
@@ -183,6 +183,8 @@ body {
   max-height: 696px;
   display: inline-block;
   position: relative;
+  overflow: hidden;
+  background-color: var(--background-color);
 }
 
 .bus__image {
@@ -221,12 +223,39 @@ body {
 
 /* Фильтры для карточек */
 
+/* Фильтр 2 карточки */
 .saturate__filter-pale {
   filter: saturate(30%);
 }
 
+/* фильтр 3 карточки */
 .saturate__filter-bright {
   filter: saturate(400%);
+}
+
+/* Фильтр 4 карточки */
+.filter__hue-rotate {
+  filter: hue-rotate(388deg);
+}
+
+/* Фильтр 5 карточки */
+.filter__invert {
+  filter: invert(80%);
+}
+
+/* Фильтр 6 карточки */
+.filter__sepia {
+  filter: sepia(90%);
+}
+
+/* Фильтр 7 карточки */
+.filter__blur {
+  filter: blur(20px);
+}
+
+/* Фильтр 8 карточки */
+.filter__multifilter {
+  filter: hue-rotate(90deg) blur(2.5px) invert(15%) brightness(110%);
 }
 
 /* Текстовый контент для картиочек */
@@ -266,7 +295,6 @@ body {
 
 .card__like-button {
   position: relative;
-  display: flex;
   inline-size: 130px;
   block-size: 38px;
   font-family: var(--accent-font);
@@ -275,154 +303,9 @@ body {
   background-color: transparent;
   border: none;
   padding: 9px 17px;
-  box-sizing: border-box;
   border: 2px solid var(--accent-color);
   cursor: pointer;
   color: var(--accent-color);
-}
-
-.card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0px var(--accent-color);
-  transition: all 0.3s ease;
-}
-
-.card__like-button::before,
-.button__container::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--accent-color);
-  width: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.card__like-button:hover::before,
-.button__container:hover::before,
-.button__icon {
-  transition: 0.5s ease-in-out;
-  width: 100%;
-  /* background-color: var(--accent-color); */
-  /* color: var(--background-color); */
-}
-
-.button__text {
-  color: var(--accent-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.button__text:hover {
-  color: var(--color-txt-btn);
-  mix-blend-mode: difference;
-  z-index: 15;
-  /* transition: all .3s ease; */
-}
-
-.like-icon {
-}
-
-.card__icon-button {
-  /* width: 39px; */
-  height: 38px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-/* Footer */
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  margin: 100px auto 100px;
-  font-family: var(--accent-font);
-}
-
-.button__container {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  background-color: var(--background-color);
-  inline-size: 335px;
-  block-size: 55px;
-  border: 2px solid var(--accent-color); */
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  margin: 0 auto 80px;
-  width: 340px;
-  height: 55px;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--accent-font, fantasy);
-  border: 2px solid var(--accent-color);
-  font-size: 14px;
-  line-height: 90%;
-  background-color: var(--background-color);
-  transition: all 0.5s;
-}
-
-/* .button__container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom:0;
-  width: 0;
-}
-
-.button__container:hover {
-  width: 100%;
-  color: black;
-} */
-
-.footer__button {
-  font-family: var(--accent-font-size);
-  font-size: var(--accent-font-size);
-  border: none;
-  background-color: transparent;
-  display: block;
-}
-
-.footer__button-icon {
-  width: 21px;
-  height: 21px;
-  background-color: transparent;
-  border: none;
-}
-
-.button__icon {
-  width: 21px;
-  height: 21px;
-  margin-right: 8px;
-  /* stroke: var(--color-button-text); */
-  /* mix-blend-mode: difference; */
-  /* z-index: 10; */
-}
-
-.button__icon:hover {
-  color: var(--color-txt-btn);
-  mix-blend-mode: difference;
-  z-index: 15;
-}
-
-.button__text-footer:hover {
-  color: var(--color-txt-btn);
-  mix-blend-mode: difference;
-  z-index: 15;
 }
 
 .card__icon-button:focus {
@@ -431,5 +314,94 @@ body {
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.card__like-button:focus,
+.footer__button:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible,
+.footer__button:focus-visible {
+  box-shadow: 2px 2px 0px var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.card__like-button::after,
+.footer__button:after {
+  position: absolute;
+  content: '';
+  background-color: var(--accent-color);
+  width: 0;
+  transition: 0.5s ease-in-out;
+  inset: 0;
+  transform-origin: left;
+}
+
+.card__like-button:hover::after,
+.footer__button:hover::after {
+  width: 100%;
+}
+
+.card__icon-button,
+.footer__button {
+  /* width: 39px; */
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button__text,
+.button__text-footer {
+  font-size: 14px;
+  font-family: var(--accent-font);
+  position: relative;
+  mix-blend-mode: difference;
+  z-index: 1;
+  color: var(--color-txt-btn);
+}
+
+.button__icon {
+  position: relative;
+  color: var(--color-txt-btn);
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-block-end: 103px;
+}
+
+.footer__button {
+  position: relative;
+  inline-size: clamp(19.125rem, 18.3768rem + 3.1925vw, 21.25rem);
+  block-size: 55px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline-start: 19px;
+  background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.button__icon {
+  width: 21px;
+  height: 21px;
+  /* stroke: var(--color-button-text); */
+  /* mix-blend-mode: difference; */
+  /* z-index: 10; */
 }

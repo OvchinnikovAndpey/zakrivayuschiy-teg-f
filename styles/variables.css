@@ -5,7 +5,7 @@
   --accent-font: 'PressStart2P-Regular', sans-serif;
   --background-color: #fff;
   --accent-color: #000;
-  --like-contour-color:var(--text-color, #000000);
-  --like-main-body-color:none;
-  --like-sparks-color:#ff0000;
+  --like-contour-color: var(--text-color, #000000);
+  --like-main-body-color: none;
+  --like-sparks-color: #ff0000;
 }
