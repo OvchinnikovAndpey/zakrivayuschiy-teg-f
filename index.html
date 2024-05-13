@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
   </head>
@@ -561,12 +562,35 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <button class="footer__button">
+      <button class="footer__button"
+        type="button"
+        onclick="window['popup__window'].showModal();" 
+        aria-controls="popup__window">
         <svg class="button__icon" viewBox="0 0 21 21">
-          <use href="./svg/floppy.svg#floppy" class="button__floopy" />
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
-        <span class="button__text-footer">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
+      <!-- ПопАп окно -->
+      <dialog class="popup" id="popup__window">
+        <div class="popup__area">
+          <div class="popup__window">
+            <svg class="button__icon-popup" viewBox="0 0 21 21">
+              <use href="./svg/floppy.svg#floppy" class="button__popup" />
+            </svg>
+            <h2 class="button__text-popup">Вставьте дискету, чтобы продолжить</h2>
+          </div>
+          <form class="popup__close-button" method="dialog"> 
+            <button 
+            class="popup__close"
+            type="button"
+            onclick="window['popup__window'].close();"
+            >
+            <span class="button__text">ок</span>
+          </button>
+          </form> 
+        </div>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>

@@ -7,11 +7,18 @@
 
 :root.theme-light {
   --main-font: 'Inter-Variable', sans-serif;
+  --main-font-size: 18px;
+  --accent-font-size: 14px;
+  --main-txt-wdth: 400;
+  --accent-txt-wdth: 700;
   --accent-font: 'PressStart2P-Regular', sans-serif;
   --main-card-font-weight: 400;
   --background-color: #fff;
   --accent-color: #000;
-  --color-txt-btn: #fff;
+  --color-txt-btn: #f5f5f5;
+  --like-contour-color: #000;
+  --like-main-body-color:red;
+  --like-sparks-color:red;
   --background-image: repeating-linear-gradient(
       90deg,
       #d3d3d3 0 2px,
@@ -28,6 +35,9 @@
   --background-color: #000;
   --accent-color: #00cc14;
   --color-txt-btn: #00cc14;
+  --like-contour-color:#00cc14;
+  --like-main-body-color:red;
+  --like-sparks-color:red;
   --background-image: repeating-linear-gradient(
       90deg,
       #000 0 2px,
@@ -45,6 +55,9 @@
     --background-color: #000;
     --accent-color: #00cc14;
     --color-txt-btn: #00cc14;
+    --like--contour-color:#00cc14;
+    --like-main-body-color:red;
+    --like-sparks-color:red;
     --background-image: repeating-linear-gradient(
         90deg,
         #000 0 2px,
