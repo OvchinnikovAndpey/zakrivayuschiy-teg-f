@@ -278,7 +278,6 @@ body {
   font-size: var(--accent-font-size);
   font-weight: var(--main-card-font-weight);
   background-color: transparent;
-  border: none;
   padding: 9px 17px;
   border: 2px solid var(--accent-color);
   cursor: pointer;
@@ -345,13 +344,6 @@ body {
   color: var(--color-txt-btn);
 }
 
-.button__icon {
-  position: relative;
-  color: var(--color-txt-btn);
-  mix-blend-mode: difference;
-  z-index: 1;
-}
-
 .sparks {
   opacity: 0;
 }
@@ -382,6 +374,10 @@ body {
 .button__icon {
   inline-size: 21px;
   block-size: 21px;
+  position: relative;
+  color: var(--color-txt-btn);
+  mix-blend-mode: difference;
+  z-index: 1;
 }
 
 /* Всплывающее окно POPUP */
