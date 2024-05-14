@@ -148,6 +148,7 @@ body {
   font-weight: var(--accent-txt-wdth);
   font-family: var(--main-font);
   font-size: var(--main-font-size);
+  font-variation-settings: 'wgth' var(--main-card-font-weight, 400);
   padding: 5px 10px;
   letter-spacing: 0.1px;
   /* line-height: 23px; */
