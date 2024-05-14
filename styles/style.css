@@ -20,7 +20,7 @@
   font-size: var(--main-font-size);
   font-family: var(--main-font);
   font-variation-settings: var(--main-card-font-weight)
-  'wdth' 100,
+  'wght' 100,
   'opsz' 0;
   background-color: var(--background-color);
   color: var(--accent-color);
@@ -151,7 +151,7 @@ body {
   font-family: var(--main-font);
   font-size: var(--main-font-size);
   font-variation-settings: var(--main-card-font-weight)
-  'wdth' 100,
+  'wght' 100,
   'opsz' 0;
   padding: 5px 10px;
   letter-spacing: 0.1px;
