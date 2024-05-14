@@ -59,6 +59,7 @@
             class="bus__image"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -121,6 +122,7 @@
             class="bus__image saturate__filter-pale"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -185,6 +187,7 @@
             class="bus__image saturate__filter-bright"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -247,6 +250,7 @@
             class="bus__image filter__hue-rotate"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -311,6 +315,7 @@
             class="bus__image filter__invert"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -376,6 +381,7 @@
             class="bus__image filter__sepia"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -438,6 +444,7 @@
             class="bus__image filter__blur"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -502,6 +509,7 @@
             class="bus__image filter__multifilter"
             src="./images/bus-image.png"
             alt="картинка с домом на колёсах"
+            loading="lazy"
           />
         </div>
         <div class="article__card-text">
@@ -562,10 +570,12 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <button class="footer__button"
+      <button
+        class="footer__button"
         type="button"
-        onclick="window['popup__window'].showModal();" 
-        aria-controls="popup__window">
+        onclick="window['popup__window'].showModal();"
+        aria-controls="popup__window"
+      >
         <svg class="button__icon" viewBox="0 0 21 21">
           <use href="./svg/floppy.svg#floppy" />
         </svg>
@@ -578,17 +588,19 @@
             <svg class="button__icon-popup" viewBox="0 0 21 21">
               <use href="./svg/floppy.svg#floppy" class="button__popup" />
             </svg>
-            <h2 class="button__text-popup">Вставьте дискету, чтобы продолжить</h2>
+            <h2 class="button__text-popup">
+              Вставьте дискету, чтобы продолжить
+            </h2>
           </div>
-          <form class="popup__close-button" method="dialog"> 
-            <button 
-            class="popup__close"
-            type="button"
-            onclick="window['popup__window'].close();"
+          <form class="popup__close-button" method="dialog">
+            <button
+              class="popup__close"
+              type="button"
+              onclick="window['popup__window'].close();"
             >
-            <span class="button__text">ок</span>
-          </button>
-          </form> 
+              <span class="button__text">ок</span>
+            </button>
+          </form>
         </div>
       </dialog>
     </footer>

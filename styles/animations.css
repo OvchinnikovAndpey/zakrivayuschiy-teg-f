@@ -92,26 +92,24 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: like-sparks 0.3s ease-in 0.3s backwards;
+  animation: heart-sparks 0.3s ease-in 0.3s backwards;
 }
 
 .like-icon .contour {
   animation: heart-scale 0.1s linear;
 }
 
-
 @keyframes heart-scale {
   0% {
-    scale:0;
+    scale: 0;
   }
 
   100% {
     scale: 1.5;
   }
-
 }
 
-@keyframes like-sparks {
+@keyframes heart-sparks {
   0% {
     opacity: 0;
   }

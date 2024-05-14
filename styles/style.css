@@ -14,29 +14,6 @@
 
 */
 
-/* :root {
-  --main-font: 'Inter-Variable', sans-serif;
-  --main-font-size: 18px;
-  --accent-font-size: 14px;
-  --main-txt-wdth: 400;
-  --accent-txt-wdth: 700;
-  --accent-font: 'PressStart2P-Regular', sans-serif;
-  --main-card-font-weight: 400;
-  --background-color: #fff;
-  --accent-color: #000;
-  --color-txt-btn: #f5f5f5;
-  --like-contour-color:#000;
-  --like-main-body-color:red;
-  --like-sparks-color:red;
-  --background-image: repeating-linear-gradient(
-      90deg,
-      #d3d3d3 0 2px,
-      rgba(0, 0, 0, 0) 2px 4px
-    ),
-    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
-    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-} */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -59,11 +36,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* max-inline-size: 696px; */
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   padding-bottom: 25px;
-  /* max-block-size: 364px; */
-  /* block-size: 368px; */
   margin: 100px auto 100px;
   font-family: var(--accent-font);
   background-color: var(--background-color);
@@ -408,11 +382,7 @@ body {
 .button__icon {
   width: 21px;
   height: 21px;
-  /* stroke: var(--color-button-text); */
-  /* mix-blend-mode: difference; */
-  /* z-index: 10; */
 }
-
 
 /* Всплывающее окно POPUP */
 .popup {
@@ -477,14 +447,27 @@ body {
   cursor: pointer;
 }
 
-
 @media (width <= 375px) {
   .footer__button {
     display: flex;
     flex-direction: column;
-    block-size: 80px;
-    padding-top:15px;
+    block-size: 82px;
+    /* padding-top:15px; */
+    padding: 15px 18px;
     font-size: 14px;
   }
-}
 
+  .article__card-text-area {
+    margin: 26px;
+  }
+
+  .article__card-text-block {
+    letter-spacing: 0.6px;
+    line-height: 21.2px;
+  }
+
+  .button__icon {
+    width: 28px;
+    height: 28px;
+  }
+}
