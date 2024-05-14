@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   font-size: var(--main-font-size);
   font-family: var(--main-font);
-  font-variation-settings: 'wgth' var(--main-card-font-weight, 400);
+  font-variation-settings: 'wgth' var(--main-card-font-weight);
   background-color: var(--background-color);
   color: var(--accent-color);
 }
@@ -145,10 +145,10 @@ body {
 }
 
 .article__title {
-  font-weight: var(--accent-txt-wdth);
+  /* font-weight: var(--accent-txt-wdth); */
   font-family: var(--main-font);
   font-size: var(--main-font-size);
-  font-variation-settings: 'wgth' var(--main-card-font-weight, 400);
+  font-variation-settings: 'wgth' var(--main-card-font-weight);
   padding: 5px 10px;
   letter-spacing: 0.1px;
   /* line-height: 23px; */
