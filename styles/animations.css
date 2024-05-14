@@ -37,6 +37,7 @@
 
 .like-icon .contour {
   fill: var(--like-contour-color);
+  animation: heart-scale 0.1s linear;
 }
 
 /* Ховер */
@@ -93,10 +94,6 @@
 
 .like-icon.is-liked .sparks {
   animation: heart-sparks 0.3s ease-in 0.3s backwards;
-}
-
-.like-icon .contour {
-  animation: heart-scale 0.1s linear;
 }
 
 @keyframes heart-scale {

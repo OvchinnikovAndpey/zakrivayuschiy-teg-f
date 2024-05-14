@@ -113,18 +113,18 @@ body {
 }
 .theme-menu__button:focus-visible::after {
   width: 100%;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .theme-menu__button:hover {
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
   opacity: 0.6;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
   pointer-events: none;
 }
 
@@ -249,7 +249,7 @@ body {
 .article__card-text-block {
   font-family: var(--main-font);
   font-weight: var(--main-txt-wdth);
-  letter-spacing: 0.61px;
+  /* letter-spacing: 0.61px; */
   line-height: 21.8px;
   margin-block-end: 25px;
 }
@@ -462,7 +462,6 @@ body {
   }
 
   .article__card-text-block {
-    letter-spacing: 0.6px;
     line-height: 21.2px;
   }
 
