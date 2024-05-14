@@ -147,15 +147,12 @@ body {
 }
 
 .article__title {
-  /* font-weight: var(--accent-txt-wdth); */
   font-family: var(--main-font);
   font-size: var(--main-font-size);
   font-variation-settings: var(--main-card-font-weight)
   'wght' 100,
   'opsz' 0;
   padding: 5px 10px;
-  letter-spacing: 0.1px;
-  /* line-height: 23px; */
   background-color: var(--background-color);
   border-bottom: 2px solid var(--accent-color);
 }
@@ -254,7 +251,6 @@ body {
 .article__card-text-block {
   font-family: var(--main-font);
   font-weight: var(--main-txt-wdth);
-  /* letter-spacing: 0.61px; */
   line-height: 21.8px;
   margin-block-end: 25px;
 }
@@ -281,7 +277,7 @@ body {
   block-size: 38px;
   font-family: var(--accent-font);
   font-size: var(--accent-font-size);
-  font-weight: var(--main-card-font-weight);
+  font-weight: var(--main-txt-wdth);
   background-color: transparent;
   padding: 9px 17px;
   border: 2px solid var(--accent-color);
@@ -332,8 +328,7 @@ body {
 
 .card__icon-button,
 .footer__button {
-  /* width: 39px; */
-  height: 38px;
+  inline-size: 38px;
   background-color: transparent;
   border: none;
   outline: none;
