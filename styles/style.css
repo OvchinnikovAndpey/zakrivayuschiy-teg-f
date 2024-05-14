@@ -290,7 +290,7 @@ body {
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
   transition: 0.3s ease;
 }
 
@@ -304,7 +304,7 @@ body {
 .footer__button:focus-visible,
 .popup__close:focus-visible {
   box-shadow: 2px 2px 0px var(--accent-color);
-  border: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
   transition: 0.3s ease;
 }
 
@@ -380,8 +380,8 @@ body {
 }
 
 .button__icon {
-  width: 21px;
-  height: 21px;
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 /* Всплывающее окно POPUP */
@@ -466,7 +466,7 @@ body {
   }
 
   .button__icon {
-    width: 28px;
-    height: 28px;
+    inline-size: 28px;
+    block-size: 28px;
   }
 }
