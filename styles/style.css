@@ -145,7 +145,7 @@ body {
 }
 
 .article__title {
-  font-weight: var(--accent-txt-wdth);
+  /* font-weight: var(--accent-txt-wdth); */
   font-family: var(--main-font);
   font-size: var(--main-font-size);
   font-variation-settings: 'wgth' var(--main-card-font-weight, 400);
