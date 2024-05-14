@@ -19,7 +19,9 @@
   min-block-size: 100dvb;
   font-size: var(--main-font-size);
   font-family: var(--main-font);
-  font-variation-settings: 'wgth' var(--main-card-font-weight);
+  font-variation-settings: var(--main-card-font-weight)
+  'wdth' 100,
+  'opsz' 0;
   background-color: var(--background-color);
   color: var(--accent-color);
 }
@@ -148,7 +150,9 @@ body {
   /* font-weight: var(--accent-txt-wdth); */
   font-family: var(--main-font);
   font-size: var(--main-font-size);
-  font-variation-settings: 'wgth' var(--main-card-font-weight);
+  font-variation-settings: var(--main-card-font-weight)
+  'wdth' 100,
+  'opsz' 0;
   padding: 5px 10px;
   letter-spacing: 0.1px;
   /* line-height: 23px; */
