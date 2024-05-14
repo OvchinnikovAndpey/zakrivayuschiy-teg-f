@@ -1,5 +1,3 @@
-# Зависимости
+Проектная работа "закрывающий тег"
 
-```bash
-npm i
-```
+https://github.com/OvchinnikovAndpey/zakrivayuschiy-teg-f.git
