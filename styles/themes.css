@@ -31,11 +31,11 @@
 :root.theme-dark {
   --main-font: 'Inter-Variable';
   --accent-font: 'PressStart2P-Regular';
-  --main-card-font-weight: 800;
+  --main-card-font-weight: 785;
   --main-font-size: 18px;
   --accent-font-size: 14px;
   --main-txt-wdth: 400;
-  --accent-txt-wdth: 800;
+  --accent-txt-wdth: 465;
   --background-color: #000;
   --accent-color: #00cc14;
   --color-txt-btn: #00cc14;
@@ -55,10 +55,10 @@
   :root {
     --main-font: 'Inter-Variable';
     --accent-font: 'PressStart2P-Regular';
-    --main-card-font-weight: 800;
+    --main-card-font-weight: 785;
     --main-font-size: 18px;
     --accent-font-size: 14px;
-    --main-txt-wdth: 400;
+    --main-txt-wdth: 465;
     --accent-txt-wdth: 800;
     --background-color: #000;
     --accent-color: #00cc14;
